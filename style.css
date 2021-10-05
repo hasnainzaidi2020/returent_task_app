@@ -1,0 +1,389 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* custom scroll bar */
+
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar1{
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.8s ease;
+}
+.navbar1.sticky{
+  background: #1b1b1b;
+  padding: 8px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar1 .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar1 .logo a{
+  font-family: 'Ephesis', cursive;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar1 .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+.banner{
+  background: url("./images/banner.jpg") no-repeat;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar1 .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    background: #222;
+    transition: all 0.3s ease;
+  }
+  .navbar1.show .menu-list{
+    left: 0%;
+  }
+  .navbar1 .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar1 .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar1.show .menu-list li a{
+    margin-left: 0px;
+  }
+
+  .banner{
+    background: url("./images/banner.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+  background-position:center;
+    background-attachment: fixed;
+  }
+
+}
+
+
+
+@media (max-width: 380px) {
+  .navbar1 .logo a{
+    font-size: 17px;
+  }
+  .navbar1 .logo p{
+    font-size: 12px;
+  }
+}
+
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#ban1{
+  background: url(./images/message.jpg);
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+.write h1{
+  color: white;
+  font-family: 'Ephesis', cursive;
+font-size: 100px;
+border: 3px ridge white;
+}
+
+.write h2{
+  color: white;
+ font-family:'Times New Roman', Times, serif;
+font-size: 50px;
+
+}
+
+
+
+
+
+
+
+.write h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+font-size: 60px;
+}
+
+@media (max-width:750px) {
+   .write h1 {
+     padding: 0px;
+    font-size: 4rem;
+    text-align: center;
+    color:  white;
+    border: 2px ridge white;
+  }  
+
+  .write h2{
+    color: white;
+   font-family:'Times New Roman', Times, serif;
+  font-size: 40px;
+  
+  }
+  
+  .write h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  font-size: 50px;
+  }
+}
+
+.cardline{
+  display: flex;
+  flex-direction: row; 
+   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card{
+  width:230px;
+ height: 380px;
+}
+.card-toping{
+  width: 100%; height:28px; padding: 5px; display: flex; justify-content: space-between; background-color: black; color: darkcyan; position: absolute; top: 0px; 
+}
+
+@media (max-width:450px) {
+footer span {
+  font-size: 12px;
+}
+
+.write h1 {
+  padding: 5px;
+  font-size: 3rem;
+  text-align: center;
+  color:  white;
+} 
+
+
+.write h2{
+  color: white;
+ font-family:'Times New Roman', Times, serif;
+font-size: 30px;
+
+}
+.write h3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+font-size: 40px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main :hover{
+  transition: linear 0.5s;
+  color: blue;
+  text-shadow: 2px 2px;
+  
+}
+.cardline{
+  display: flex;
+  flex-direction: row; 
+   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card{
+  width: 130px;
+  height: 270px;
+
+  padding: 0px;
+  font-size: smaller;
+}
+.card h6{
+  text-align: center;
+  font-size: 13px;
+}
+.card img{
+  height: 150px;
+}
+.card hr{
+  display: none;
+}
+.card .card-text{
+  display: none;
+}
+.card button{
+  text-align: center;
+  width:100px;
+  margin-left:-5px;
+  font-size: smaller;
+
+}
+
+p .lead{
+  font-size: 10px !important;
+  text-align: justify !important;
+}
+
+.bg-light p{
+ font-size: medium;
+}
+h2{
+font-size: large;
+}
+h3{
+  font-size: large;
+}
+.row h2{
+  font-size: larger;
+}
+
+}
+@media (max-width:450px) {
+  .image img{
+    width: 100px;
+    height: 100px;
+  }
+  span{
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+ 
+  .main h1{
+    margin-top: 5px;
+    font-size: 30px ;
+  }
+
+  .main h2{
+    font-size: 18px ;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+}
+
+}
